@@ -1,0 +1,107 @@
+.modalJoin {
+   z-index: 5;
+   width: 600px;
+   height: 404px;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-image: url(../img/Rectangle\ 51.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   display: flex;
+   justify-content: center;
+   padding-top: 113px;
+
+   opacity: 0;
+
+   &:target {
+      opacity: 1;
+   }
+
+   i {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      color: #0b0e66;
+   }
+
+   form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+         @include styleText(400, 24px, 29px);
+         padding-bottom: 2px;
+      }
+      input {
+         border: 2px solid #0b0e66;
+         width: 440px;
+         height: 40px;
+      }
+
+      input:nth-of-type(1) {
+         margin-bottom: 9px;
+      }
+
+      input:nth-of-type(2) {
+         margin-bottom: 35px;
+      }
+
+      button {
+         width: 260px;
+         height: 80px;
+
+         background: #0b0e66;
+         border: 3px solid #26c7ea;
+         border-radius: 45px 0px;
+         color: #26c7ea;
+         @include styleText(400, 24px, 30px);
+
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+      }
+   }
+}
+
+.welcome {
+   z-index: 5;
+   opacity: 1;
+   font-family: "HeadlandOne";
+   text-align: center;
+   color: #ffffff;
+   @include styleText(400, 24px, 30px);
+   font-family: "HeadlandOne";
+
+   background-image: url(../img/modalWelcome.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 600px;
+   height: 404px;
+
+   // &:target {
+   //    opacity: 1;
+   // }
+
+   a {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      color: #ffffff;
+      font-size: 14px;
+   }
+
+   p:nth-of-type(1) {
+      padding-top: 50px;
+   }
+
+   p:nth-of-type(2) {
+      padding-top: 80px;
+   }
+}

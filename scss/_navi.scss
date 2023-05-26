@@ -1,0 +1,39 @@
+.Navi {
+   background-image: url(../img/backgroundNavi.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 664px;
+
+   h2 {
+      text-align: center;
+      padding-top: 32px;
+      padding-bottom: 45px;
+      @include styleText(400, 32px, 40px);
+   }
+
+   .language {
+      width: 1030px;
+      height: 504px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px 35px;
+
+      div {
+         width: 320px;
+         height: 240px;
+         background: rgba(255, 255, 255, 0.7);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-around;
+
+         @include styleText(400, 24px, 24px);
+
+         img {
+            width: 152px;
+            height: 40px;
+         }
+      }
+   }
+}

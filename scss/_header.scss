@@ -1,0 +1,74 @@
+header {
+   position: relative;
+   background-image: url(../img/backgroundHeader.png);
+   height: 700px;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   color: #ffffff;
+
+   padding-top: 25px;
+   padding-left: 12%;
+
+   & > div:nth-of-type(1) {
+      position: absolute;
+      height: 700px;
+      width: 100vw;
+      left: 0;
+      top: 0;
+      background: linear-gradient(
+         90deg,
+         #36526a 5.74%,
+         rgba(55, 107, 151, 0) 93.38%
+      );
+   }
+
+   & > img:nth-of-type(1) {
+      position: absolute;
+      bottom: 0;
+      right: 7.7%;
+   }
+
+   .clan {
+      z-index: 2;
+      position: relative;
+      width: 298px;
+      @include styleText(400, 20px, 24px);
+      text-align: left;
+
+      img:nth-of-type(1) {
+         margin-bottom: 149px;
+      }
+      img:nth-of-type(2) {
+         margin-left: 54px;
+      }
+
+      button {
+         margin-top: 45px;
+         width: 260px;
+         height: 80px;
+
+         background: #0b0e66;
+         border: 3px solid #26c7ea;
+         border-radius: 45px 0px;
+         color: #26c7ea;
+         @include styleText(400, 24px, 30px);
+      }
+   }
+
+   .social {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 12%;
+      top: 30%;
+      font-size: 30px;
+      height: 141px;
+      justify-content: space-between;
+
+      i:hover {
+         color: #5a5dbd;
+         transition: 0.5s;
+      }
+   }
+}

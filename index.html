@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+         integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body>
+      <div class="modalJoin" id="modalJoin">
+         <a href="#close" title="Close" class="close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+         </a>
+
+         <form action="">
+            <label for="">Name</label>
+            <input type="text" />
+
+            <label for="">Email</label>
+            <input type="text" />
+
+            <button type="submit">Join clan</button>
+         </form>
+      </div>
+      <div class="welcome" id="welcome">
+         <a href="#close" title="Close" class="close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+         </a>
+         <p>Welcome to our clan</p>
+         <p>
+            Your Banshee is coming. <br />
+            See you soon on Pandora.
+         </p>
+      </div>
+      <header>
+         <div></div>
+         <img src="./img/1 2.png" alt="" />
+         <div class="clan">
+            <img src="./img/logo.png" alt="" />
+            <p>
+               Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn
+               slu Na'viyä hapxì. Säwem nìayoeng!
+            </p>
+            <img src="./img/arrow.svg" alt="" />
+            <p>
+               I'm speaking with the warrior! Your spirit goes with Eywa, your
+               body stays behind to become part of the People. Fight with us!
+            </p>
+
+            <button><a href="#modalJoin">Join clan</a></button>
+         </div>
+
+         <div class="social">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+         </div>
+      </header>
+
+      <section class="sentences">
+         <h2>
+            “MORE SKY PEOPLE ARE GONNA COME. THEY’RE GONNA COME LIKE A RAIN THAT
+            NEVER ENDS.”
+         </h2>
+         <p>JAKE SULLY</p>
+         <img src="./img/sentences.svg" alt="" />
+      </section>
+      <section class="wathcTrailer">
+         <button>WATCH TRAILER</button>
+      </section>
+
+      <section class="sentences">
+         <h2>
+            “MORE SKY PEOPLE ARE GONNA COME. THEY’RE GONNA COME LIKE A RAIN THAT
+            NEVER ENDS.”
+         </h2>
+         <p>JAKE SULLY</p>
+         <img src="./img/sentences.svg" alt="" />
+      </section>
+
+      <section class="Navi">
+         <h2>Let's learn the Na'vi language</h2>
+         <div class="language">
+            <div>
+               <p>Hello</p>
+               <img src="./img/arrowLeft.svg" alt="./" />
+               <p>Kaltxì</p>
+            </div>
+            <div>
+               <p>How Are You?</p>
+               <img src="./img/sentences.svg" alt="" />
+               <p>Ngaru lu fpom srak?</p>
+            </div>
+            <div>
+               <p>I'm Well</p>
+               <img src="./img/arrowRight.svg" alt="" />
+               <p>Lu fpom</p>
+            </div>
+            <div>
+               <p>Thank you</p>
+               <img src="./img/arrowLeft.svg" alt="./" />
+               <p>Irayo si</p>
+            </div>
+            <div>
+               <p>I See You</p>
+               <img src="./img/sentences.svg" alt="" />
+               <p>Oel ngati kameie</p>
+            </div>
+            <div>
+               <p>Follow me!</p>
+               <img src="./img/arrowRight.svg" alt="" />
+               <p>Nong oet!</p>
+            </div>
+         </div>
+      </section>
+
+      <section class="sentences">
+         <h2>
+            “MORE SKY PEOPLE ARE GONNA COME. THEY’RE GONNA COME LIKE A RAIN THAT
+            NEVER ENDS.”
+         </h2>
+         <p>JAKE SULLY</p>
+         <img src="./img/sentences.svg" alt="" />
+      </section>
+
+      <footer></footer>
+   </body>
+   <script>
+      let state = true;
+
+      setTimeout(function () {
+         if (state) {
+            document.getElementById("welcome").style.opacity = 1;
+            state = false;
+         }
+      }, 500);
+
+      let a = document.querySelector(".welcome .close");
+      a.addEventListener("click", function () {
+         document.getElementById("welcome").style.opacity = 0;
+      });
+   </script>
+</html>

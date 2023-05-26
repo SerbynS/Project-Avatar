@@ -1,0 +1,19 @@
+.wathcTrailer {
+   height: 700px;
+   background-image: url(../img/backgroundTrailer.svg);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   button {
+      background: #0b0e66;
+      border: 3px solid #26c7ea;
+      border-radius: 45px 0px;
+      color: #26c7ea;
+      width: 260px;
+      height: 80px;
+      @include styleText(400, 24px, 30px);
+   }
+}
